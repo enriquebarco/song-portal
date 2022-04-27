@@ -5,7 +5,24 @@ pragma solidity ^0.8.4;
 import "hardhat/console.sol";
 
 contract SongPortal {
+
+    uint256 totalSongs;
+
     constructor() {
-        console.log("Lets see if I am, indeed, a contract that is smart");
+        console.log("I am your first smart contract sir, and I have just been constructed");
+    }
+
+    function info() public {
+        
+    }
+
+    function song() public {
+        totalSongs += 1;
+        console.log("%s has sent a song!", msg.sender);
+    }
+
+    function getTotalSongs() public view returns (uint256) {
+        console.log("We have %d total songs!", totalSongs);
+        return totalSongs;
     }
 }
