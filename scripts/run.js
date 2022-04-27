@@ -7,8 +7,6 @@ const main = async () => {
     console.log("Contract deployed to:", songContract.address);
     console.log("Contract deployed by:", owner.address);
 
-    console.log(ownerConnection);
-
     let songCount = await songContract.getTotalSongs();
 
     //sending myself a song

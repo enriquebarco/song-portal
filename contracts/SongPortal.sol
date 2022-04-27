@@ -12,10 +12,6 @@ contract SongPortal {
         console.log("I am your first smart contract sir, and I have just been constructed");
     }
 
-    function info() public {
-        
-    }
-
     function song() public {
         totalSongs += 1;
         console.log("%s has sent a song!", msg.sender);
